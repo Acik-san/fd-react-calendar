@@ -1,0 +1,13 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 20px solid #009991;
+}
+
+@media screen and (min-width: 1080px) {
+  .section {
+    flex-direction: row;
+    height: 100vh;
+  }
+}

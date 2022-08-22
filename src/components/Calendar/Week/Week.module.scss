@@ -1,0 +1,25 @@
+.cell {
+  color: #b7b7b7;
+}
+.currentDay {
+  color: #eb1b57;
+  position: relative;
+}
+.currentDay::before {
+  content: " ";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  border: 7px solid #eb1b57;
+  border-radius: 50%;
+}
+@media screen and (min-width: 560px) {
+  .currentDay::before {
+    left: 5px;
+    right: 5px;
+    top: -3px;
+    bottom: 10px;
+  }
+}
